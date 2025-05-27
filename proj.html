@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flappy Bird Game</title>
+  <link rel="stylesheet" href="proj.css" />
+</head>
+<body>
+  <div class="game-container">
+    <canvas id="gameCanvas" width="400" height="500"></canvas>
+
+    <!-- Start Screen -->
+    <div id="startScreen">
+      <h1>Flappy Bird</h1>
+      <button id="startGameBtn">Start Game</button>
+    </div>
+
+    <!-- Difficulty Menu -->
+    <div id="difficultyMenu">
+      <h2>Select Difficulty</h2>
+      <button class="difficulty" data-level="easy">Easy</button>
+      <button class="difficulty" data-level="medium">Medium</button>
+      <button class="difficulty" data-level="hard">Hard</button>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="gameOverScreen">
+      <h2>Game Over</h2>
+      <p>Score: <span id="finalScore">0</span></p>
+      <button id="restartBtn">Try Again</button>
+      <button id="homeBtn">Home</button>
+    </div>
+  </div>
+
+  <script src="proj.js"></script>
+</body>
+</html>
